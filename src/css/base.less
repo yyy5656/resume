@@ -1,5 +1,5 @@
 // 基础样式
-@color-main: #00b38a; // 主色
+@color-main: #65c7b0; // 主色
 @font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif; // 普通字体
 @font-family-title: 'Lucida Grande', 'Hiragino Sans GB', 'Hiragino Sans GB W3', @font-family; // 标题字体
 
@@ -19,8 +19,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
     font-family: @font-family;
-    font-size: 14px;
-    line-height: 22 / 14;
+    font-size: 18px;
+    line-height: 28 / 14;
     color: #333;
     background-color: #eee;
     padding-top: 5px;
@@ -227,7 +227,7 @@ a {
     .section-hd {
         position: relative;
         height: 32px;
-        margin: 10px auto 8px;
+        margin: 10px auto 10px;
         overflow: hidden;
     }
     .section-bd {
@@ -271,16 +271,20 @@ a {
                 margin-bottom: 0;
             }
         }
+        .item-bold{
+            font-weight: 500;
+        }
     }
     .item-main {
         .item-hd {
-            padding-top: 10px;
+            padding-top: 30px;
         }
         .item-bd {
             margin-bottom: 4px;
         }
         ~ .item {
             padding-left: 1px;
+            margin-top: 10px;
             .item-hd {
                 padding-top: 6px;
             }
@@ -306,7 +310,7 @@ a {
     }
     .item-hd {
         position: relative;
-        padding: 8px 0 5px;
+        padding: 10px 0 5px;
         font-weight: 500;
         line-height: 22px;
         overflow: hidden;
@@ -318,6 +322,7 @@ a {
             display: inline-block;
             font-size: 14px;
             width: 135px;
+            color: #4ca791;
             @media screen and (max-width: 720px) {
                 width: 100%;
                 margin-bottom: 5px;
@@ -341,15 +346,46 @@ a {
             float: left;
             display: inline-block;
         }
+        .item-strong{
+            color: #4ca791;
+            font-weight: bolder;
+            display: inline;
+            font-size: 17px;
+        }
     }
     .item-bd {
         margin-bottom: 6px;
+        .item-proname{
+            background-color: #4ca791;
+            width: 60px;
+            font-size: 16px;
+            padding: 2px 3px;
+            color: white;
+            border-radius: 2px;
+            display: inline;
+            margin-right: 4px;
+            .item-span{
+                margin-top: 20px;
+            }
+        }
+        strong {
+            font-family: @font-family;
+            font-size: 17px;
+            line-height: 30px;
+            font-weight: 500;
+            font-style: italic;
+            color: #494949;
+            margin: 0 3px;
+            padding: 0 4px;
+            border-bottom: 1px solid #eee;
+            box-shadow: inset 0 -18px #eee;
+        }
     }
     .section-content {
-        line-height: 25px;
+        // line-height: 30px;
         text-align: justify;
         word-break: break-all;
-        margin-bottom: 2px;
+        margin-bottom: 8px;
         .iconfont {
             color: @color-main;
         }
@@ -367,15 +403,17 @@ a {
         }
         strong {
             font-family: @font-family;
-            font-size: 13px;
+            font-size: 17px;
             line-height: 15px;
+            font-style: italic;
             font-weight: 500;
             color: #494949;
             margin: 0 3px;
             padding: 0 4px;
             border-bottom: 1px solid #eee;
-            box-shadow: inset 0 -8px #eee;
+            box-shadow: inset 0 -18px #eee;
         }
+        
     }
 }
 .iconfont {
